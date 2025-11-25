@@ -107,8 +107,10 @@
       justify-content: center;
       text-align: left;
       color: #fdfcf8;
-      background: url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1600&q=80")
-        center/cover no-repeat;
+
+      /* NEW FOREST BACKGROUND */
+      background: url("https://images.unsplash.com/photo-1509021436665-8f07dbf5bf1d?auto=format&fit=crop&w=1600&q=80")
+      center/cover no-repeat;
     }
 
     .hero::after {
@@ -318,7 +320,6 @@
       bottom: 18px;
       right: 18px;
       width: 300px;
-      max-width: calc(100% - 36px);
       background: #ffffff;
       border-radius: 12px;
       box-shadow: 0 14px 34px rgba(0, 0, 0, 0.28);
@@ -340,32 +341,9 @@
       cursor: pointer;
     }
 
-    .chat-header-title {
-      display: flex;
-      flex-direction: column;
-    }
-
-    .chat-header-title span:first-child {
-      font-weight: 600;
-      font-size: 0.9rem;
-    }
-
-    .chat-header-title span:last-child {
-      font-size: 0.75rem;
-      opacity: 0.86;
-    }
-
-    .chat-toggle {
-      border: none;
-      background: transparent;
-      color: #f8f5ef;
-      font-size: 1.1rem;
-      cursor: pointer;
-    }
-
     .chat-body {
       background: #fbfaf7;
-      padding: 10px 10px 8px;
+      padding: 10px;
       height: 220px;
       overflow-y: auto;
     }
@@ -384,12 +362,6 @@
       color: #334030;
     }
 
-    .chat-message small {
-      display: block;
-      font-size: 0.7rem;
-      opacity: 0.65;
-    }
-
     .chat-input-wrap {
       display: flex;
       border-top: 1px solid #e2ddd4;
@@ -400,9 +372,7 @@
       flex: 1;
       border: none;
       padding: 9px 10px;
-      font-size: 0.9rem;
       background: transparent;
-      outline: none;
     }
 
     .chat-input-wrap button {
@@ -410,74 +380,12 @@
       background: #f0b45a;
       padding: 0 14px;
       font-weight: 600;
-      font-size: 0.9rem;
       cursor: pointer;
-      color: #3a2710;
-    }
-
-    .chat-cta {
-      display: inline-block;
-      margin-top: 6px;
-      padding: 6px 10px;
-      border-radius: 999px;
-      background: #234224;
-      color: #f5f3ee;
-      font-size: 0.8rem;
-      font-weight: 600;
-      cursor: pointer;
-    }
-
-    .chat-cta:hover {
-      background: #1a311a;
     }
 
     .chat-widget.minimized .chat-body,
     .chat-widget.minimized .chat-input-wrap {
       display: none;
-    }
-
-    /* MOBILE */
-    @media (max-width: 768px) {
-      nav ul {
-        position: absolute;
-        top: 54px;
-        right: 0;
-        background: rgba(24, 48, 32, 0.98);
-        flex-direction: column;
-        padding: 10px 16px 12px;
-        gap: 10px;
-        transform: translateY(-10px);
-        opacity: 0;
-        pointer-events: none;
-        transition: opacity 0.18s ease;
-      }
-
-      nav ul.open {
-        opacity: 1;
-        pointer-events: auto;
-      }
-
-      .hamburger {
-        display: flex;
-      }
-
-      .hero {
-        text-align: left;
-      }
-
-      .hero h1 {
-        font-size: 2.15rem;
-      }
-
-      .columns,
-      .services-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .cta-band-inner {
-        flex-direction: column;
-        align-items: flex-start;
-      }
     }
   </style>
 </head>
@@ -512,21 +420,18 @@
       <div class="hero-kicker">Charlotte, North Carolina</div>
       <h1>Dependable Tree Care for Your Home & Property.</h1>
       <p>
-        Olive Branch Tree Care provides professional tree work with a focus on safety, care, and respect for your
-        property. From removals to pruning, we’re here to help you take care of your trees the right way.
+        Olive Branch Tree Care provides professional tree work with a focus on safety,
+        care, and respect for your property.
       </p>
 
       <div class="hero-actions">
         <button class="btn-primary" onclick="window.location.href='contact.html'">
           Get a Free Quote
         </button>
-        <button class="btn-secondary" onclick="window.location.href='tel:YOUR_PHONE_NUMBER_HERE'">
-          <span>📞</span> Call for Tree Service
-        </button>
-      </div>
 
-      <div class="hero-footnote">
-        Unsure what you need? Tell us about your tree and we’ll help you figure it out.
+        <button class="btn-secondary" onclick="window.location.href='tel:YOUR_PHONE'">
+          <span>📞</span> Call Us
+        </button>
       </div>
     </div>
   </section>
@@ -534,32 +439,23 @@
   <!-- WHY CHOOSE US -->
   <section>
     <div class="section-inner">
-      <h2 class="section-heading">Why Homeowners Choose Olive Branch</h2>
-      <p class="section-sub">
-        A local tree care company you can call, talk to, and count on when it matters most.
-      </p>
+      <h2 class="section-heading">Why Choose Olive Branch</h2>
+      <p class="section-sub">Your local, dependable tree professionals.</p>
 
       <div class="columns">
         <div class="card">
-          <h3>Respect for Your Property</h3>
-          <p>
-            We treat your yard like our own, taking care to protect landscaping, structures, and neighbors’ property
-            while we work.
-          </p>
+          <h3>Experienced Crew</h3>
+          <p>Tree care performed safely and professionally.</p>
         </div>
+
         <div class="card">
-          <h3>Safety-Minded Tree Work</h3>
-          <p>
-            Tree work can be dangerous. We follow safe practices and use the right equipment to bring trees down in a
-            controlled way.
-          </p>
+          <h3>Respect for Your Home</h3>
+          <p>We take great care to protect your yard and property.</p>
         </div>
+
         <div class="card">
-          <h3>Local, Person-to-Person Service</h3>
-          <p>
-            You’re not calling a call center. You’re reaching a local tree crew you can talk to about your project and
-            ask questions directly.
-          </p>
+          <h3>Local Service</h3>
+          <p>We're a Charlotte-based company you can reach directly.</p>
         </div>
       </div>
     </div>
@@ -568,98 +464,69 @@
   <!-- SERVICES PREVIEW -->
   <section>
     <div class="section-inner">
-      <h2 class="section-heading">Tree Services at a Glance</h2>
-      <p class="section-sub">
-        Every property is different, but most work falls into a few common categories. Here are the types of projects we
-        regularly help with.
-      </p>
+      <h2 class="section-heading">Tree Services We Offer</h2>
 
       <div class="services-grid">
         <div class="card">
           <h3>Tree Removal</h3>
-          <p>
-            From dead trees to problem limbs hanging over roofs or driveways, we can safely remove trees and haul away
-            debris.
-          </p>
-          <span class="service-pill">Removals & haul-off</span>
+          <span class="service-pill">Large & small</span>
         </div>
+
         <div class="card">
           <h3>Trimming & Pruning</h3>
-          <p>
-            Structural pruning, thinning, and shaping to keep trees healthy, away from structures, and looking their
-            best.
-          </p>
-          <span class="service-pill">Maintenance & safety</span>
+          <span class="service-pill">Maintenance</span>
         </div>
-        <div class="card">
-          <h3>Stump & General Cleanup</h3>
-          <p>
-            Stump grinding, brush cleanup, and general tree work to help you reclaim your yard and keep it usable.
-          </p>
-          <span class="service-pill">Clean, ready-to-use yard</span>
-        </div>
-      </div>
 
-      <div style="margin-top: 22px; font-size: 0.92rem; color: #5e655e;">
-        Want a full list of services? Visit our <a href="services.html" style="color:#234224;text-decoration:underline;">Services page</a>
-        or send a quick quote request and we’ll get back to you.
+        <div class="card">
+          <h3>Stump Grinding</h3>
+          <span class="service-pill">Cleanup</span>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- CTA BAND -->
+  <!-- CTA -->
   <div class="cta-band">
     <div class="cta-band-inner">
       <div class="cta-band-text">
-        <h2>Have a tree you’re worried about?</h2>
-        <p>
-          Whether it’s leaning, dead, or just getting too close for comfort, reach out and tell us what’s going on. We
-          can look at photos, talk it through, and recommend next steps.
-        </p>
+        <h2>Need Tree Work?</h2>
+        <p>Tell us what you’re dealing with — we can help.</p>
       </div>
+
       <button class="btn-primary" onclick="window.location.href='contact.html'">
-        Request a Free Quote
+        Request a Quote
       </button>
     </div>
   </div>
 
   <!-- FOOTER -->
   <footer>
-    <div>
-      Olive Branch Tree Care &middot; Charlotte, NC &middot; <span>Phone: YOUR_PHONE_NUMBER_HERE</span>
-    </div>
-    <div style="margin-top:4px;">
-      <span>&copy; 2025 Olive Branch Tree Care. Demo website.</span>
-    </div>
+    Olive Branch Tree Care · Charlotte, NC · <span>YOUR_PHONE</span><br>
+    <span>&copy; 2025 Demo Website</span>
   </footer>
 
   <!-- CHAT WIDGET -->
   <div class="chat-widget minimized" id="chatWidget">
     <div class="chat-header" id="chatHeader">
-      <div class="chat-header-title">
-        <span>Questions about your trees?</span>
-        <span>Ask a quick question or request a call.</span>
+      <div>
+        <strong>Ask a Quick Question</strong><br>
+        <small>Tree help & quick answers</small>
       </div>
-      <button class="chat-toggle" id="chatToggle">▲</button>
+      <div id="chatToggle">▲</div>
     </div>
 
     <div class="chat-body" id="chatBody"></div>
 
     <div class="chat-input-wrap">
-      <input type="text" id="chatInput" placeholder="Type a question about your trees..." />
+      <input type="text" id="chatInput" placeholder="Type your question..." />
       <button id="chatSend">Send</button>
     </div>
   </div>
 
   <script>
-    // SIMPLE NAV TOGGLE
-    const hamburger = document.getElementById("hamburger");
-    const navList = document.getElementById("navList");
-    hamburger.addEventListener("click", () => {
-      navList.classList.toggle("open");
-    });
+    const BUSINESS_PHONE = "YOUR_PHONE";
+    const QUOTE_URL = "contact.html";
 
-    // CHAT LOGIC
     const chatWidget = document.getElementById("chatWidget");
     const chatHeader = document.getElementById("chatHeader");
     const chatToggle = document.getElementById("chatToggle");
@@ -667,169 +534,95 @@
     const chatInput = document.getElementById("chatInput");
     const chatSend = document.getElementById("chatSend");
 
-    const BUSINESS_PHONE = "YOUR_PHONE_NUMBER_HERE"; // replace with real number
-    const QUOTE_URL = "contact.html";
-
-    function addBotMessage(text) {
-      const div = document.createElement("div");
-      div.className = "chat-message bot";
-      div.innerHTML = text;
-      chatBody.appendChild(div);
-      chatBody.scrollTop = chatBody.scrollHeight;
-    }
-
-    function addUserMessage(text) {
-      const div = document.createElement("div");
-      div.className = "chat-message user";
-      div.textContent = text;
-      chatBody.appendChild(div);
-      chatBody.scrollTop = chatBody.scrollHeight;
-    }
-
-    function quoteButtonHTML(label) {
-      return (
-        label +
-        `<br><span class="chat-cta" onclick="window.location.href='${QUOTE_URL}'">Open Quote Form</span>`
-      );
-    }
-
-    // Initial greeting when chat first opens
     let greeted = false;
 
-    function openChatAndGreet() {
+    function addBot(text) {
+      const msg = document.createElement("div");
+      msg.className = "chat-message bot";
+      msg.innerHTML = text;
+      chatBody.appendChild(msg);
+      chatBody.scrollTop = chatBody.scrollHeight;
+    }
+
+    function addUser(text) {
+      const msg = document.createElement("div");
+      msg.className = "chat-message user";
+      msg.textContent = text;
+      chatBody.appendChild(msg);
+      chatBody.scrollTop = chatBody.scrollHeight;
+    }
+
+    function openChat() {
       chatWidget.classList.remove("minimized");
       chatToggle.textContent = "▼";
+
       if (!greeted) {
         greeted = true;
-        addBotMessage(
-          "Hi there! I’m a simple assistant for Olive Branch Tree Care. Ask a quick question about your trees, or I can point you to our quote form or phone number."
-        );
+        addBot("Hi! I'm here to help with tree questions. Ask anything or request a quote anytime.");
       }
     }
 
-    // Header click = toggle
     chatHeader.addEventListener("click", () => {
-      const minimized = chatWidget.classList.contains("minimized");
-      if (minimized) {
-        openChatAndGreet();
+      if (chatWidget.classList.contains("minimized")) {
+        openChat();
       } else {
         chatWidget.classList.add("minimized");
         chatToggle.textContent = "▲";
       }
     });
 
-    // Toggle button (just mirror header behavior)
     chatToggle.addEventListener("click", (e) => {
       e.stopPropagation();
-      const minimized = chatWidget.classList.contains("minimized");
-      if (minimized) {
-        openChatAndGreet();
+      if (chatWidget.classList.contains("minimized")) {
+        openChat();
       } else {
         chatWidget.classList.add("minimized");
         chatToggle.textContent = "▲";
       }
     });
 
-    function handleChatMessage() {
-      const msg = chatInput.value.trim();
-      if (!msg) return;
+    function handleMessage() {
+      const text = chatInput.value.trim();
+      if (!text) return;
+      addUser(text);
       chatInput.value = "";
-      addUserMessage(msg);
 
-      const text = msg.toLowerCase();
+      const lower = text.toLowerCase();
 
-      // BASIC INTENTS
+      // HOURS
+      if (lower.includes("hours") || lower.includes("open")) {
+        addBot(`Our hours vary. Please call us directly at ${BUSINESS_PHONE}.`);
+        return;
+      }
 
-      // HOURS / WHEN OPEN
-      if (text.includes("hours") || text.includes("open") || text.includes("close") || text.includes("time")) {
-        addBotMessage(
-          `Our hours can vary based on the job and time of year. For the most accurate information, please call us at ${BUSINESS_PHONE}.`
+      // PRICING
+      if (lower.includes("price") || lower.includes("cost") || lower.includes("quote")) {
+        addBot(
+          `Prices depend on the job. Click below to request a quote:<br><br>
+          <span class="chat-cta" onclick="window.location.href='${QUOTE_URL}'">Open Quote Form</span>`
         );
         return;
       }
 
-      // PRICE / QUOTE / ESTIMATE
-      if (
-        text.includes("price") ||
-        text.includes("cost") ||
-        text.includes("quote") ||
-        text.includes("estimate") ||
-        text.includes("$")
-      ) {
-        addBotMessage(
-          quoteButtonHTML(
-            "Every tree is different, so we usually give pricing after we know a few details. The easiest way to start is to send a quick quote request."
-          )
-        );
+      // SERVICES
+      if (lower.includes("service") || lower.includes("do you")) {
+        addBot("We offer tree removal, trimming, pruning, stumps, and cleanup.");
         return;
       }
 
-      // SERVICES / WHAT DO YOU DO
-      if (
-        text.includes("service") ||
-        text.includes("services") ||
-        text.includes("what do you do") ||
-        text.includes("do you do")
-      ) {
-        addBotMessage(
-          "We handle typical residential tree work like removals, trimming/pruning, and general cleanup. If you have something specific in mind, feel free to describe it or open the quote form."
-        );
+      // EMERGENCY
+      if (lower.includes("emergency") || lower.includes("storm")) {
+        addBot(`For urgent help, please call ${BUSINESS_PHONE} immediately.`);
         return;
       }
 
-      // TREE REMOVAL / LIMBS
-      if (
-        text.includes("remove") ||
-        text.includes("removal") ||
-        text.includes("cut") ||
-        text.includes("falling") ||
-        text.includes("fell") ||
-        text.includes("limb") ||
-        text.includes("branch")
-      ) {
-        addBotMessage(
-          quoteButtonHTML(
-            "We can often help with problem trees or limbs. Tell us a little about where the tree is and what’s going on, or click below to send a quick quote request."
-          )
-        );
-        return;
-      }
-
-      // STUMP
-      if (text.includes("stump") || text.includes("grind")) {
-        addBotMessage(
-          quoteButtonHTML(
-            "Stump grinding/removal is something we can typically help with. Let us know how many stumps you have, or use the quote form and we’ll follow up."
-          )
-        );
-        return;
-      }
-
-      // EMERGENCY / STORM
-      if (text.includes("storm") || text.includes("emergency") || text.includes("urgent")) {
-        addBotMessage(
-          `If this is an urgent tree issue or storm damage, the fastest way to reach us is by phone at ${BUSINESS_PHONE}. For non-emergency work, you can also use the quote form.`
-        );
-        return;
-      }
-
-      // PHONE / CALL
-      if (text.includes("phone") || text.includes("call") || text.includes("number")) {
-        addBotMessage(`You can reach us directly by phone at ${BUSINESS_PHONE}.`);
-        return;
-      }
-
-      // CATCH-ALL
-      addBotMessage(
-        `I might not have every detail, but I can help you get in touch. You can call us at ${BUSINESS_PHONE} or use the quote form and someone will follow up with you.`
-      );
+      // GENERAL
+      addBot(`I may not have every detail, but you can call us at ${BUSINESS_PHONE} or request a quote anytime.`);
     }
 
-    chatSend.addEventListener("click", handleChatMessage);
+    chatSend.addEventListener("click", handleMessage);
     chatInput.addEventListener("keypress", (e) => {
-      if (e.key === "Enter") {
-        handleChatMessage();
-      }
+      if (e.key === "Enter") handleMessage();
     });
   </script>
 </body>
