@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Request a Quote | Olive Branch Tree Care</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: "Poppins", sans-serif; }
+
+    body {
+      background: #f5f3ee;
+      color: #1d1d1d;
+    }
+
+    /* HEADER */
+    header {
+      position: sticky;
+      top: 0;
+      background: rgba(24,48,32,0.96);
+      color: #fff;
+      z-index: 1000;
+      backdrop-filter: blur(8px);
+    }
+
+    .container {
+      width: 92%;
+      max-width: 1100px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 14px 0;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-weight: 700;
+      font-size: 1.4rem;
+    }
+
+    .logo-icon {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background: radial-gradient(circle, #e6f4ea 0%, #6ca969 40%, #234224 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 24px;
+    }
+
+    nav a {
+      color: #fff;
+      opacity: 0.9;
+      font-size: 0.95rem;
+    }
+
+    nav a:hover { opacity: 1; text-decoration: underline; }
+
+    /* FORM SECTION */
+    section {
+      padding: 60px 0;
+    }
+
+    .section-inner {
+      width: 92%;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    .section-heading {
+      font-size: 2rem;
+      font-weight: 600;
+      text-align: center;
+      margin-bottom: 14px;
+      color: #1f2c20;
+    }
+
+    .section-sub {
+      text-align: center;
+      font-size: 0.95rem;
+      color: #5e655e;
+      margin-bottom: 32px;
+    }
+
+    form {
+      background: #ffffff;
+      padding: 28px;
+      border-radius: 12px;
+      border: 1px solid #e4e0d6;
+      box-shadow: 0 10px 24px rgba(0, 0, 0, 0.06);
+    }
+
+    label {
+      font-weight: 600;
+      color: #234224;
+    }
+
+    input, textarea {
+      width: 100%;
+      margin-top: 6px;
+      margin-bottom: 22px;
+      padding: 12px;
+      font-size: 1rem;
+      border-radius: 8px;
+      border: 1px solid #c9c5bb;
+      background: #faf9f6;
+    }
+
+    textarea { resize: vertical; }
+
+    button {
+      background: #f0b45a;
+      border: none;
+      padding: 14px 20px;
+      width: 100%;
+      border-radius: 999px;
+      color: #3a2710;
+      font-weight: 700;
+      font-size: 1rem;
+      cursor: pointer;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.22);
+    }
+
+    button:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 10px 24px rgba(0,0,0,0.28);
+    }
+
+    /* FOOTER */
+    footer {
+      background: #162016;
+      color: #f1f6f2;
+      text-align: center;
+      padding: 20px 0;
+      font-size: 0.88rem;
+    }
+
+    footer span { opacity: 0.8; }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="container">
+      <div class="logo">
+        <div class="logo-icon">🌿</div>
+        Olive Branch Tree Care
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="index.html#home">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html" style="text-decoration:underline;">Get Quote</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- FORM SECTION -->
+  <section>
+    <div class="section-inner">
+
+      <h2 class="section-heading">Request a Free Quote</h2>
+      <p class="section-sub">Tell us what you need help with — we respond quickly.</p>
+
+      <form action="https://formsubmit.co/YOUR_EMAIL_HERE" method="POST">
+
+        <!-- REQUIRED SETTINGS -->
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_subject" value="New Quote Request from Website">
+
+        <!-- REDIRECT -->
+        <input type="hidden" name="_next" value="https://YOUR_GITHUB_URL/thankyou.html">
+
+        <label>Name</label>
+        <input type="text" name="name" required>
+
+        <label>Phone</label>
+        <input type="text" name="phone" required>
+
+        <label>Email</label>
+        <input type="email" name="email" required>
+
+        <label>Tell us about your tree issue</label>
+        <textarea name="message" rows="5" required></textarea>
+
+        <button type="submit">Submit Request</button>
+      </form>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    Olive Branch Tree Care · Charlotte, NC · <span>YOUR_PHONE</span><br>
+    <span>&copy; 2025 Demo Website</span>
+  </footer>
+
+</body>
+</html>
