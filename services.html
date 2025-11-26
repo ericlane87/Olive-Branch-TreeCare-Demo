@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Our Services | Olive Branch Tree Care</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: "Poppins", sans-serif; }
+
+    body {
+      background: #f5f3ee;
+      color: #1d1d1d;
+    }
+
+    /* HEADER */
+    header {
+      position: sticky;
+      top: 0;
+      background: rgba(24,48,32,0.96);
+      color: #fff;
+      z-index: 1000;
+      backdrop-filter: blur(8px);
+    }
+
+    .container {
+      width: 92%;
+      max-width: 1100px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 14px 0;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-weight: 700;
+      font-size: 1.4rem;
+    }
+
+    .logo-icon {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background: radial-gradient(circle, #e6f4ea 0%, #6ca969 40%, #234224 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 24px;
+    }
+
+    nav a {
+      color: #fff;
+      opacity: 0.9;
+      font-size: 0.95rem;
+    }
+
+    nav a:hover { opacity: 1; text-decoration: underline; }
+
+    /* SECTION HEADINGS */
+    section {
+      padding: 60px 0;
+    }
+
+    .section-inner {
+      width: 92%;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .section-heading {
+      font-size: 2rem;
+      font-weight: 600;
+      color: #1f2c20;
+      margin-bottom: 8px;
+    }
+
+    .section-sub {
+      font-size: 0.95rem;
+      color: #5e655e;
+      margin-bottom: 32px;
+    }
+
+    /* SERVICES GRID */
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 20px;
+    }
+
+    .service-card {
+      background: #ffffff;
+      border-radius: 12px;
+      padding: 20px;
+      border: 1px solid #e4e0d6;
+      box-shadow: 0 10px 24px rgba(0,0,0,0.06);
+    }
+
+    .service-card h3 {
+      font-size: 1.2rem;
+      margin-bottom: 8px;
+      color: #273528;
+    }
+
+    .service-card p {
+      font-size: 0.92rem;
+      color: #5e655e;
+      line-height: 1.4;
+    }
+
+    /* CTA BAND */
+    .cta-band {
+      background: #1f2c20;
+      padding: 38px 0;
+      color: #fff;
+      margin-top: 60px;
+    }
+
+    .cta-inner {
+      width: 92%;
+      max-width: 1100px;
+      margin: auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .cta-inner h2 {
+      font-size: 1.8rem;
+      margin-bottom: 6px;
+    }
+
+    .cta-inner p {
+      color: #dbe5d8;
+      font-size: 1rem;
+    }
+
+    .btn-primary {
+      background: #f0b45a;
+      border: none;
+      padding: 12px 22px;
+      border-radius: 999px;
+      color: #3a2710;
+      font-weight: 600;
+      font-size: 1rem;
+      cursor: pointer;
+      box-shadow: 0 8px 18px rgba(0,0,0,0.25);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 12px 24px rgba(0,0,0,0.3);
+    }
+
+    /* FOOTER */
+    footer {
+      background: #162016;
+      color: #f1f6f2;
+      text-align: center;
+      padding: 20px 0;
+      font-size: 0.88rem;
+    }
+    footer span { opacity: 0.8; }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="container">
+      <div class="logo">
+        <div class="logo-icon">🌿</div>
+        Olive Branch Tree Care
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="index.html#home">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html" style="text-decoration:underline;">Services</a></li>
+          <li><a href="contact.html">Get Quote</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- MAIN SECTION -->
+  <section>
+    <div class="section-inner">
+      <h2 class="section-heading">Our Tree Services</h2>
+      <p class="section-sub">Safe, reliable, and affordable tree care for your home or property.</p>
+
+      <div class="services-grid">
+
+        <div class="service-card">
+          <h3>Tree Removal</h3>
+          <p>Whether it’s dead, dangerous, or simply in the wrong place — we safely remove all types of trees.</p>
+        </div>
+
+        <div class="service-card">
+          <h3>Tree Trimming</h3>
+          <p>Professional trimming to improve tree health, appearance, and safety around your home.</p>
+        </div>
+
+        <div class="service-card">
+          <h3>Stump Grinding</h3>
+          <p>We grind down leftover stumps to clear your yard and make space usable again.</p>
+        </div>
+
+        <div class="service-card">
+          <h3>Storm Damage Cleanup</h3>
+          <p>Quick response and safe removal of fallen or damaged limbs after storms.</p>
+        </div>
+
+        <div class="service-card">
+          <h3>Property Line Clearing</h3>
+          <p>We clear trees and brush from fence lines and property boundaries.</p>
+        </div>
+
+        <div class="service-card">
+          <h3>Routine Maintenance</h3>
+          <p>Annual or seasonal tree care to keep your landscape healthy year-round.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BAND -->
+  <div class="cta-band">
+    <div class="cta-inner">
+      <div>
+        <h2>Need an Estimate?</h2>
+        <p>Tell us what you're dealing with — we'll take a look and get back to you.</p>
+      </div>
+
+      <button class="btn-primary" onclick="window.location.href='contact.html'">
+        Request a Quote
+      </button>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    Olive Branch Tree Care · Charlotte, NC · <span>YOUR_PHONE</span><br>
+    <span>&copy; 2025 Demo Website</span>
+  </footer>
+
+</body>
+</html>
